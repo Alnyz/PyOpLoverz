@@ -21,7 +21,7 @@ class LastedOp(Response):
 		
 	def read(self, obj): 
 		for k in obj.get("result", []):
-			if self.result == None:
+			if self.result is None:
 				self.result = []
 			r = LastedResponse()
 			r.read(k)
@@ -48,7 +48,7 @@ class SearchOp(Response):
 	def read(self, obj):
 		self.amount = obj.get("amount", None)
 		for k in obj.get("results", []):
-			if self.results == None:
+			if self.results is None:
 				self.results = []
 			r = SearchResponse()
 			r.read(k)
@@ -118,7 +118,7 @@ class StreamOp(Response):
 		info.read(obj.get("info",None))
 		self.info = info
 		for k in obj.get("list_downloads",[]):
-			if self.list_downloads == None:
+			if self.list_downloads is None:
 				self.list_downloads = []
 			r = StreamDownload()
 			r.read(k)
