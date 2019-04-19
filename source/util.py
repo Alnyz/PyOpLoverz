@@ -24,7 +24,7 @@ class Request(object):
 			else:
 				r = s.get(f"{URL}/page/{page}/", proxies = self.proxy if self.proxy != None else None)
 			if r.ok:
-				soup = BeautifulSoup(r.text, "html5lib")
+				soup = BeautifulSoup(r.text, "lxml")
 				body = soup.find("div", class_="right").find("div", class_="lts")
 				selected = body.select("ul > li")
 				return selected
@@ -85,7 +85,7 @@ class StreamOpLoverz(Request):
 		data = {"stream":"", "info":{},"list_downloads":[]}
 		r = self._req.get(list_url)
 		if r.ok:
-			soup = BeautifulSoup(r.text, "html5lib")
+			soup = BeautifulSoup(r.text, "lxml")
 			post_body = soup.find("div", class_="postbody")
 			stream_body = post_body.find("div", attrs={"id":"embed"})
 			stream = stream_body.find("div", class_="embedholder").find("iframe").get("src")
