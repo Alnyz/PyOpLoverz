@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#JSON-RPC 
+#JSON-RPC
 
 class Response(object):
 	def __init__(self):
@@ -10,7 +10,7 @@ class Response(object):
 
 	def write(self):
 		pass
-	
+
 	def __getitem__(self, key):
 		return getattr(self, key, None)
 

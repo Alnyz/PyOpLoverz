@@ -2,7 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 from itertools import zip_longest, chain, repeat
-from concurrent.futures import ThreadPoolExecutor 
+from concurrent.futures import ThreadPoolExecutor
 
 URL = "https://www.oploverz.in"
 header = {
@@ -16,7 +16,7 @@ class Request(object):
 		if self.headers is None:
 			self._req.headers.update(header)
 		self.proxy = proxy
-	
+
 	def _request(self, search=None, page=1):
 		with self._req as s:
 			if search != None:
@@ -28,11 +28,11 @@ class Request(object):
 				body = soup.find("div", class_="right").find("div", class_="lts")
 				selected = body.select("ul > li")
 				return selected
-				
+
 class LastedOpLoverz(Request):
 	def __init__(self):
 		super(LastedOpLoverz, self).__init__()
-	
+
 	def lasted(self, page):
 		ret = self._request(page)
 		data = {"result":[]}
@@ -55,7 +55,7 @@ class StreamOpLoverz(Request):
 
 	def find_url_stream(self, query, page):
 		data = self._request(query, page)
-		for p in data:	
+		for p in data:
 			ret = p.find("div", class_="dtl")
 			url = ret.find("h2").find("a")["href"]
 			self.urls.append(url)
@@ -80,7 +80,7 @@ class StreamOpLoverz(Request):
 				t.lower():h
 			})
 		return ret
-		
+
 	def get_stream(self, list_url: str or list):
 		data = {"stream":"", "info":{},"list_downloads":[]}
 		r = self._req.get(list_url)
@@ -105,11 +105,11 @@ class StreamOpLoverz(Request):
 					]
 				})
 			return data
-					
+
 class SearchOpLoverz(Request):
 	def __init__(self):
 		super(SearchOpLoverz, self).__init__()
-			
+
 	def detailed(self, search, page):
 		select = self._request(search, page)
 		data = {"amount":len(select),"results":[]}
@@ -123,4 +123,3 @@ class SearchOpLoverz(Request):
 				"release":rilis.strip()
 				})
 		return data
-		
