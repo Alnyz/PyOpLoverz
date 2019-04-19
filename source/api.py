@@ -1,5 +1,4 @@
 from . import *
-import traceback
 
 class OpzApi(SearchOpLoverz, LastedOpLoverz, StreamOpLoverz, Request):
 	def __init__(self, return_as = "dict"):
