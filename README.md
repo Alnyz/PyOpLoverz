@@ -6,14 +6,11 @@ _Unofficial wrapper from oploverz.in, this will get detail and stream about anim
 ## Installing
 
 **Using clone**
-
-
 1. `git clone https://github.com/dyseo/PyOpLoverz`
 2. `cd PyOpLoverz`
 3. `python3 setup.py install`
 
 **From pypi**
-
 - `pip install pyoploverz`
 
 ## Example
