@@ -3,8 +3,19 @@ _Unofficial wrapper from oploverz.in, this will get detail and stream about anim
 
 [![CodeFactor](https://www.codefactor.io/repository/github/dyseo/pyoploverz/badge/master)](https://www.codefactor.io/repository/github/dyseo/pyoploverz/overview/master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f70e4ca74d0547419cd01872335ae59d)](https://www.codacy.com/app/dyseo/PyOpLoverz?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dyseo/PyOpLoverz&amp;utm_campaign=Badge_Grade) [![Build Status](https://travis-ci.org/dyseo/PyOpLoverz.svg?branch=master)](https://travis-ci.org/dyseo/PyOpLoverz) [![License](https://img.shields.io/badge/MIT-License-blue.svg)]() [![Version](https://img.shields.io/badge/Version-0.0.1-red.svg)](https://github.com/dyseo/PyOpLoverz) [![Python](https://img.shields.io/badge/Python-3.6%20%7C%203.7-brightgreen.svg)](pytho.org)
 
-## Installing requirements
-`pip3 install -r requirements.txt`
+## Installing
+
+**Using clone**
+
+
+1. `git clone https://github.com/dyseo/PyOpLoverz`
+2. `cd PyOpLoverz`
+3. `python3 setup.py install`
+
+**From pypi**
+
+- `pip install pyoploverz`
+
 ## Example
 ```python
 from source import OpzApi
