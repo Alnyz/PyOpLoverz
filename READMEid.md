@@ -6,6 +6,7 @@ _Unofficial wrapper dari oploverz.in, ini akan memberikan detail dan streaming t
 ## Bahasa
 [English](https://github.com/dyseo/PyOpLoverz/blob/master/README.md) | [indonesia](https://github.com/dyseo/PyOpLoverz/blob/master/READMEid.md)
 
+___
 ## Pemasangan
 **Menggunakan clone**
 1. `git clone https://github.com/dyseo/PyOpLoverz`

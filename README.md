@@ -6,6 +6,7 @@ _Unofficial wrapper from oploverz.in, this will get detail and stream about anim
 ## Language
 [English](https://github.com/dyseo/PyOpLoverz/blob/master/README.md) | [indonesia](https://github.com/dyseo/PyOpLoverz/blob/master/READMEid.md)
 
+___
 ## Installing
 **Using clone**
 1. `git clone https://github.com/dyseo/PyOpLoverz`
