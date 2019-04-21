@@ -4,7 +4,7 @@ _Unofficial wrapper dari oploverz.in, ini akan memberikan detail dan streaming t
 [![CodeFactor](https://www.codefactor.io/repository/github/dyseo/pyoploverz/badge/master)](https://www.codefactor.io/repository/github/dyseo/pyoploverz/overview/master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f70e4ca74d0547419cd01872335ae59d)](https://www.codacy.com/app/dyseo/PyOpLoverz?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dyseo/PyOpLoverz&amp;utm_campaign=Badge_Grade) [![Build Status](https://travis-ci.org/dyseo/PyOpLoverz.svg?branch=master)](https://travis-ci.org/dyseo/PyOpLoverz) [![License](https://img.shields.io/badge/MIT-License-blue.svg)]() [![Version](https://img.shields.io/badge/Version-0.0.1-red.svg)](https://github.com/dyseo/PyOpLoverz) [![Python](https://img.shields.io/badge/Python-3.6%20%7C%203.7-brightgreen.svg)](pytho.org) [![Pypi](https://img.shields.io/badge/PyPi-0.0.1-blue.svg)](https://pypi.org/project/pyoploverz/)
 
 ## Bahasa
-[English](https://github.com/dyseo/PyOpLoverz/README.md) | [indonesia](https://github.com/dyseo/PyOpLoverz/READMEid.md)
+[English](https://github.com/dyseo/PyOpLoverz/blob/master/README.md) | [indonesia](https://github.com/dyseo/PyOpLoverz/blob/master/READMEid.md)
 
 ## Pemasangan
 **Menggunakan clone**
