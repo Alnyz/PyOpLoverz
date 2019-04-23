@@ -32,8 +32,7 @@ class OpzApi(SearchOpLoverz, LastedOpLoverz, StreamOpLoverz, Request):
 		#this will returned all data at one page
 		#TODO: just using dict result for this, make you easy to parse this
 		self.find_url_stream(query, page)
-		for i in self.multi_stream():
-			return i
+		return  self.multi_stream()
 
 	def lasted_anime(self, page: int = 1):
 		data = self.lasted(page)
